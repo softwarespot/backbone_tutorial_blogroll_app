@@ -1,3 +1,5 @@
+/* global __dirname */
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
@@ -16,13 +18,15 @@ mongoose.model('Blog', BlogSchema);
 
 var Blog = mongoose.model('Blog');
 
-/*var blog = new Blog({
-	author: 'Michael',
-	title: 'Michael\'s Blog',
-	url: 'http://michaelsblog.com'
-});
-
-blog.save();*/
+/*
+	var blog = new Blog({
+		author: 'Michael',
+		title: 'Michael\'s Blog',
+		url: 'http://michaelsblog.com'
+	});
+	
+	blog.save();
+*/
 
 var app = express();
 

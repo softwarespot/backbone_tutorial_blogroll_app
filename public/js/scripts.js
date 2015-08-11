@@ -1,3 +1,5 @@
+/* global $, _, Backbone */
+
 Backbone.Model.prototype.idAttribute = '_id';
 
 // Backbone Model
